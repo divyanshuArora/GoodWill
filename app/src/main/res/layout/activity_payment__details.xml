@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    tools:context=".Payment_Details">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dim_10"
+        android:background="@drawable/loginbox"
+        >
+
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_60"
+    android:layout_margin="@dimen/dim_5"
+    android:padding="@dimen/dim_10"
+    android:id="@+id/empName"
+    />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Start Date"
+        android:singleLine="true"
+        android:padding="@dimen/dim_10"
+        android:layout_weight="5"
+        android:windowSoftInputMode="stateHidden"
+        android:cursorVisible="false"
+        android:inputType="date"
+        android:drawableLeft="@drawable/drawable_left"
+        android:textSize="@dimen/sp_10"
+        android:drawablePadding="@dimen/dim_5"
+        android:id="@+id/starDate"
+        android:textColor="#000000"/>
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_5"
+        android:hint="End Date"
+        android:cursorVisible="false"
+        android:drawableLeft="@drawable/drawable_left"
+        android:drawablePadding="@dimen/dim_5"
+        android:textSize="@dimen/sp_10"
+        android:inputType="date"
+        android:layout_weight="5"
+        android:windowSoftInputMode="stateHidden"
+        android:singleLine="true"
+        android:padding="@dimen/dim_10"
+        android:id="@+id/endDate"
+        android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Record"
+        android:id="@+id/getRecord"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/dim_10"
+        android:background="@drawable/button_design"
+        />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/historyPayment"
+        android:dividerHeight="@dimen/dim_2"
+        android:scrollbars="none"
+        ></ListView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

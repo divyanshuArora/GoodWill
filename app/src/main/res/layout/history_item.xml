@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dim_10"
+    android:padding="@dimen/dim_5"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date :"
+        android:layout_weight="1.5"
+        android:layout_gravity="start"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#000000"
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:gravity="end"
+            android:textColor="#000000"
+            android:layout_weight="3.5"
+            android:id="@+id/dateHistory"
+            android:textSize="@dimen/sp_12"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Info :"
+            android:layout_weight="1.5"
+            android:layout_gravity="start"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="info"
+            android:gravity="end"
+            android:textColor="#000000"
+            android:layout_weight="3.5"
+            android:id="@+id/infoHistory"
+            android:textSize="@dimen/sp_12"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debit :"
+            android:layout_weight="1.5"
+            android:id="@+id/creditColor"
+            android:layout_gravity="start"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:gravity="end"
+            android:textColor="#000000"
+            android:layout_weight="3.5"
+            android:id="@+id/debitHistory"
+            android:textSize="@dimen/sp_14"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit :"
+            android:id="@+id/debitColor"
+            android:layout_weight="1.5"
+            android:layout_gravity="start"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit"
+            android:gravity="end"
+            android:textColor="#000000"
+            android:layout_weight="3.5"
+            android:id="@+id/creditHistory"
+            android:textSize="@dimen/sp_14"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance :"
+            android:id="@+id/Balance"
+            android:layout_weight="1.5"
+            android:layout_gravity="start"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="balance"
+            android:gravity="end"
+            android:textColor="#1907dc"
+            android:layout_weight="3.5"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:id="@+id/balanceHistory"
+            android:textSize="@dimen/sp_13"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

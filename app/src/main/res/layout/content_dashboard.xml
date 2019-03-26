@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Dashboard"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_dashboard">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Payment Details"
+        android:gravity="center"
+        android:inputType="date"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginTop="@dimen/dim_10"
+        />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/select_emp_name"
+        android:layout_margin="10dp">
+        <requestFocus/>
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Employee Name"
+        android:padding="@dimen/dim_10"
+        android:singleLine="true"
+        android:background="@drawable/edittext"
+        android:layout_margin="@dimen/dim_10"
+        android:visibility="gone"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/e_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:padding="@dimen/dim_10"
+        android:inputType="number"
+        android:ems="10"
+        android:maxLength="10"
+
+        android:minEms="10"
+        android:singleLine="true"
+        android:background="@drawable/edittext"
+        android:layout_margin="@dimen/dim_10"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60"
+        android:hint="SelectPayment Type"
+        android:padding="@dimen/dim_10"
+        android:id="@+id/paymentType"
+        android:singleLine="true"
+        android:background="@drawable/edittext"
+        android:layout_margin="@dimen/dim_10"
+        />
+
+
+
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Pick Date"
+         android:textSize="@dimen/sp_15"
+         android:drawableLeft="@drawable/drawable_left"
+         android:singleLine="true"
+         android:inputType="date"
+         android:windowSoftInputMode="stateHidden"
+         android:cursorVisible="false"
+         android:background="@drawable/edittext"
+         android:padding="@dimen/dim_10"
+         android:id="@+id/pickdate"
+         android:layout_margin="@dimen/dim_10"
+         />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Info"
+                android:padding="@dimen/dim_10"
+                android:maxEms="120"
+                android:maxLength="120"
+
+                android:id="@+id/info"
+                android:background="@drawable/edittext"
+                android:layout_margin="@dimen/dim_10"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Amount"
+                android:padding="@dimen/dim_10"
+                android:id="@+id/amntDash"
+
+                android:singleLine="true"
+                android:inputType="number"
+                android:background="@drawable/edittext"
+                android:layout_margin="@dimen/dim_10"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/glry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:src="@drawable/ic_menu_gallery"
+                    android:layout_margin="@dimen/dim_25" />
+
+
+
+
+
+
+
+                <ImageView
+                    android:layout_width="@dimen/dim_90"
+                    android:layout_height="@dimen/dim_70"
+                    android:id="@+id/selectedImg"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insert Record"
+                android:layout_margin="@dimen/dim_10"
+                android:id="@+id/insertRec"
+                android:background="@drawable/button_design"
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
